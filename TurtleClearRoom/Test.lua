@@ -1,4 +1,5 @@
-local Movement = require("Movement")
+-- local Movement = require("Movement")
 
-Movement.forward()
-Movement.forward()
+-- Movement.forward()
+-- Movement.forward()
+print("hello world")
