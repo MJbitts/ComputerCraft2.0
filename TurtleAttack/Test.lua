@@ -1,4 +1,4 @@
-tel = peripheral.find("weak_automata")
+tel = peripheral.find("end_automata")
 
 if tel then 
     print("peripheral found")
