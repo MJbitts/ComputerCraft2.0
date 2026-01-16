@@ -2,7 +2,7 @@ tel = peripheral.find("end_automata")
 
 if tel then 
     print("peripheral found")  
-    local returnHome = tel.savePoint()
+    local saveHomeevent,message = tel.savePoint("savedHome")
     local e,k =os.pullEvent("key")
     if k == keys.s then
         print("returning home")
