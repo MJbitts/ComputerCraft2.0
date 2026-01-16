@@ -7,18 +7,17 @@ if tel then
     print("If you want to warp back please press b ")
     local e,k =os.pullEvent("key")
     if k == keys.t then
+        term.clear()
         print("moving forward")
         turtle.forward()
     end
     if k == keys.h then
        local saveHomeevent,message = tel.savePoint("setHome")
        term.clear()
-       points()
         print("point saved")
     elseif k == keys.b then
-
         print("returning home")
-        warpToPoint("setHome")
+        tel.warpToPoint("setHome")
     end
 else 
     print("Peripherial not found try to reninstall core")
