@@ -1,4 +1,4 @@
-local detector = peripheral.find("playerDetector")
+local detector = peripheral.find("player_detector")
 while true do
     if detector then
         local pos = detector.getPlayerPos("mjbitts")
@@ -7,4 +7,5 @@ while true do
     else
         print("playerDetector not found please try reanstalling")
     end
+    sleep(3)
 end
