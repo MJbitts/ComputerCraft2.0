@@ -11,11 +11,12 @@ if tel then
         turtle.forward()
     end
     if k == keys.h then
-        local saveHomeevent,message = tel.savePoint(savedpoint)
+        local saveHomeevent,message = tel.savePoint("setHome")
+        savedpoint = "setHome"
         print("point saved")
     elseif k == keys.b then
         print("returning home")
-        warpToPoint(savedpoint)
+        warpToPoint("setHome")
     end
 else 
     print("Peripherial not found try to reninstall core")
