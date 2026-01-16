@@ -1,4 +1,5 @@
 tel = peripheral.find("end_automata")
+local savedpoint
 while true do
 if tel then 
     print("peripheral found") 
@@ -10,11 +11,11 @@ if tel then
         turtle.forward()
     end
     if k == keys.h then
-        local saveHomeevent,message = tel.savePoint("savedHome")
+        local saveHomeevent,message = tel.savePoint(savedpoint)
         print("point saved")
     elseif k == keys.b then
         print("returning home")
-        warpToPoint("savedHome")
+        warpToPoint(savedpoint)
     end
 else 
     print("Peripherial not found try to reninstall core")
