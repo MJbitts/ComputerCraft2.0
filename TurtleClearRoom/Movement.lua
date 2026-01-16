@@ -39,5 +39,8 @@ function Movement.down()
     file.writeLine(direction..":"..turtleOriginX..","..turtleOriginY..",".. turtleOriginZ)
     file.close()
 end
+function Movement.writeToFile(direction , xOrigin, yOrigin, zOrigin)
+    
+function Movement.turnRight()
 
 return Movement
