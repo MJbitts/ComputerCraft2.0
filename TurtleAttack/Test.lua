@@ -11,10 +11,12 @@ if tel then
         turtle.forward()
     end
     if k == keys.h then
-        local saveHomeevent,message = tel.savePoint("setHome")
-        savedpoint = "setHome"
+       local saveHomeevent,message = tel.savePoint("setHome")
+       term.clear()
+       points()
         print("point saved")
     elseif k == keys.b then
+
         print("returning home")
         warpToPoint("setHome")
     end
