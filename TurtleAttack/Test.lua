@@ -5,7 +5,7 @@ if tel then
     local e,k =os.pullEvent("key")
     if k == keys.t then
         print("moving forward")
-        turtle.forard()
+        turtle.forward()
     end
     print("Please push h to save point")
     if k == keys.h then
