@@ -4,6 +4,7 @@ while true do
         local pos = detector.getPlayerPos("mjbitts")
         term.clear()
         print("Position: "..pos.x.. ","..pos.y..","..pos.z)
+        print("Attack Button")
     else
         print("playerDetector not found please try reanstalling")
     end

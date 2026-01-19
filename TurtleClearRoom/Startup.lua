@@ -1,12 +1,4 @@
-local files = fs.list("")
-
-for index , file in ipairs(files) do
-if file ~= "rom" and file ~= "startup.lua" then
-        print("Deleting: " .. file)
-        fs.delete(file)
-    end
-end
-print("User Files Cleared")
-
-shell.run("pastebin get Mpz3enw0 DownLoads")
-shell.run("DownLoads")
+shell.run("rm","ComputerCraft2.0")
+shell.run("clone.lua", "https://github.com/MJbitts/ComputerCraft2.0.git")
+shell.setDir("ComputerCraft2.0/TurtleAttack")
+ 
