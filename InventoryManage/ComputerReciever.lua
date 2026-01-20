@@ -1,5 +1,5 @@
 local wireLess = peripheral.wrap("right")
-local inventory = peripheral.find("inventory_manager_2")
+local inventory = peripheral.wrap("inventory_manager_2")
 if wireLess then
     if inventory then
         print("found wireless connection")
