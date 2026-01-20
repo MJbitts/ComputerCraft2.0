@@ -3,7 +3,7 @@ local inventory = peripheral.find("inventory_manager")
 if wireLess then
     if inventory then
         print("found wireless connection")
-        modem.open(5)
+        wireLess.open(5)
         event, modemSide, senderChannel, replyChannel, message, senderDistance = os.pullEvent("modem_message")
         print("I received a message : ".. message)
         if senderChannel == 5 and message == ("Dump") then
