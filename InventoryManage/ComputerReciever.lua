@@ -8,7 +8,7 @@ if wireLess then
             event, modemSide, senderChannel, replyChannel, message, senderDistance = os.pullEvent("modem_message")
             print("I received a message : ".. message)
             if senderChannel == 5 and message == ("Dump") then
-                inventory.removeItemFromPlayer("up", {name="minecraft:cobblestone", toSlot=26, fromSlot=9, count=5})
+                inventory.removeItemFromPlayer("left", {name="minecraft:cobblestone", toSlot=26, fromSlot=9, count=5})
             end
         end
         term.clear()
