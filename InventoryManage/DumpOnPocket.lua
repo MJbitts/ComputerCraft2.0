@@ -1,8 +1,8 @@
 local wireLess = peripheral.wrap("back")
-if wireless then
+if wireLess then
     print("found wireless connection")
-    modem.open(5)
-    modem.transmit("Dump")
+    wireLess.open(5)
+    wireLess.transmit("Dump")
 else
     print("Didn't find router or inventory please reinstal")
 end
