@@ -8,7 +8,9 @@ if wireLess then
             event, modemSide, senderChannel, replyChannel, message, senderDistance = os.pullEvent("modem_message")
             print("I received a message : ".. message)
             if senderChannel == 5 and message == ("Dump") then
+                repeat
                 inventory.removeItemFromPlayer("back", {toSlot=26, fromSlot=9})
+                until message == ("Stop")
             end
         end
         term.clear()
