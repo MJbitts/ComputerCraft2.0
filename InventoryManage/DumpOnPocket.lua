@@ -3,10 +3,11 @@ local UserText
 if wireLess then
     print("found wireless connection")
     wireLess.open(5)
-    UserText = read()
-    while UserText == "Dump" do
-    wireLess.transmit(5,5,UserText)
+    while true do
+    wireLess.transmit(5,5,"Dump")
     term.clear()
+    print("Dumped")
+    sleep(3)
     end
 else
     print("Didn't find router or inventory please reinstal")
