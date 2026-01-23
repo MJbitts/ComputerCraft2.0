@@ -7,7 +7,7 @@ if wireLess then
     wireLess.transmit(5,5,"Dump")
     term.clear()
     print("Dumped")
-    sleep(3)
+    sleep(1)
     end
 else
     print("Didn't find router or inventory please reinstal")
